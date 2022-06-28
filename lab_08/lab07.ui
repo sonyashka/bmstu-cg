@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>581</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>CrossCursor</cursorShape>
+    </property>
+   </widget>
+   <widget class="QLabel" name="actionLabel">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>190</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 209, 255);</string>
+    </property>
+    <property name="text">
+     <string>Выберите действие</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cutterInputBut">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>240</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 145, 135);</string>
+    </property>
+    <property name="text">
+     <string>Ввести отсекатель</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lineInputBut">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>300</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 145, 135);</string>
+    </property>
+    <property name="text">
+     <string>Ввести отрезки</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cutBut">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>360</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 145, 135);</string>
+    </property>
+    <property name="text">
+     <string>Провести отсечение</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="colorCutterBox">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>40</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(217, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Красный</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Зеленый</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Синий</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="butLabel">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>400</y>
+      <width>171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Кнопочный функционал:
+Ctrl+Q - Переход в режим горизонтальных линий (повторно для выключения)
+Ctrl+W - Переход в режим вертикальных линий (повторно для выключения)
+Ctrl+C - Очистить экран</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="colorCutterLabel">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 209, 255);</string>
+    </property>
+    <property name="text">
+     <string>Выберите цвет отсекателя</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="colorCuttedBox">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>160</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(217, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Оранжевый</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Желтый</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Циан</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="colorCuttedLabel">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>130</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 209, 255);</string>
+    </property>
+    <property name="text">
+     <string>Выберите цвет отсеченных</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="colorLineBox">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>100</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(217, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Черный</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Серый</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Пурпурный</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="colorLineLabel">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>70</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(140, 209, 255);</string>
+    </property>
+    <property name="text">
+     <string>Выберите цвет отрезков</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
